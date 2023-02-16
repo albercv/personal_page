@@ -6,10 +6,10 @@ import { workList } from '../data/workLIst';
 export const Proyecto = () => {
     const params = useParams();
 
-    useEffect = (() => {
-        let workItem = workList.filter(work => work.id === params.id)
-        console.log(workItem)
-    }, []);
+    // useEffect = (() => {
+    //     let workItem = workList.filter(work => work.id === params.id)
+    //     console.log(workItem)
+    // }, []);
 
     return (
         <div className='page'>
