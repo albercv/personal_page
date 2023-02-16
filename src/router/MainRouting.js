@@ -8,6 +8,7 @@ import { Servicios } from '../components/Servicios'
 import { HeaderNav } from '../components/layout/HeaderNav'
 import { FooterComp } from '../components/layout/FooterComp'
 import { NotFound } from '../components/NotFound'
+import { Proyecto } from '../components/Proyecto'
 
 export const MainRouting = () => {
   return (
@@ -21,6 +22,7 @@ export const MainRouting = () => {
             <Route path="/cv" element={<Curriculum />}/>
             <Route path="/portfolio" element={<Portafolio />}/>
             <Route path="/services" element={<Servicios />}/>
+            <Route path="/project/:id" element={<Proyecto />}/>
             <Route path='/*' element={<NotFound />} />
         </Routes>
         </section>
