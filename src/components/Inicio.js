@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Portafolio } from './Portafolio'
+import { WorkList } from './WorkList'
 
 export const Inicio = () => {
   return (
@@ -12,12 +14,13 @@ export const Inicio = () => {
         <h3>
           Ayudando a grandes y pequeñas empresas a desarollar sus sitios web visibles, rentables y escalables desde hace 8 años.
         </h3>
-        <Link to="/contact" >Contacta conmigo</Link>
+        <Link className='contactHome' to="/contact" >Contacta conmigo</Link>
       </div>
       <section className='lastWork'>
         <h2>Proyectos anteriores</h2>
         <p>Estos son algunos de mis trabajos de desarrollo web</p>
         <div className='works'>
+          <WorkList limit="2"/>
         </div>
       </section>
     </div>
